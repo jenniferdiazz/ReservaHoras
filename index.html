@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form class="form-register" onsubmit="return validar();">
+        <div class="contenedor-inputs">
+            <input type="text" id="rut" name="rut" placeholder="Ingrese rut con guion y sin puntos" class="inputcss">
+            <input type="text" id="nombres" name="nombres" placeholder="Nombres" class="inputcss">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
+            <input type="text" id="edad" name="edad" placeholder="edad" class="inputcss">
+            <input type="email" id="correo" name="correo" placeholder="Correo" class="inputcss">
+            <!--Lista de seleccion de especialidad-->
+            <select id="especialidad">
+                <option selected="yes">Escoga una especialidad</option>
+                <option value="traumatologia">Traumatologia</option>
+                <option value="odontologia">odontologia</option>
+                <option value="psicologia">psicologia</option>
+            </select>
+            <input type="text" id="fecha" name="fecha" placeholder="fecha dd-mm-yyyy" class="inputcss">
+            <!--Lista de seleccion de horas-->
+            <select id="hora">
+                <option selected="yes">Escoga una hora</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+            </select>
+            <input type="submit" value="Reservar" class="btn-enviar">
+
+        </div>
+    </form> 
+    <script type="text/javascript" src="/assets/js/validar.js"></script>
+</body>
+</html>
